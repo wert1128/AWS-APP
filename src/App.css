@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.ping_board {
+  font-size: large;
+  padding: 20vw;
+}

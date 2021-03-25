@@ -8,7 +8,7 @@ import {
     Route
 } from "react-router-dom";
 
-import C3File from './C3File';
+import Ping from './Ping';
 
 class App extends React.Component {
     render() {
@@ -16,7 +16,7 @@ class App extends React.Component {
           <div className="App">
             <BrowserRouter>
               <Switch>
-                  <Route exact path="/" component={C3File}/>
+                  <Route exact path="/ping" component={Ping}/>
               </Switch>
             </BrowserRouter>
           </div>
