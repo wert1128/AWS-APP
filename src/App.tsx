@@ -16,7 +16,7 @@ class App extends React.Component {
           <div className="App">
             <BrowserRouter>
               <Switch>
-                  <Route exact path="/ping" component={Ping}/>
+                  <Route exact path="/" component={Ping}/>
               </Switch>
             </BrowserRouter>
           </div>

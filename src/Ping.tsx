@@ -1,11 +1,11 @@
 import React from 'react';
 import * as AWS from 'aws-sdk';
-
 class Ping extends React.Component {
 
     docClient: AWS.DynamoDB.DocumentClient;
     counter = 0;
-    // I would not declare the sum in the class itself, but a local variable in the function cannot be accessed in lambda
+    // I would not declare the sum in the class, but a local variable in the function cannot be accessed in lambda,
+    // I am aware that this is not the best practice
     sum = 0;
     // at the beginning of the process, the database will not have all three most recent pings,
     // so the pings returned will either be null or be inaccurate.
