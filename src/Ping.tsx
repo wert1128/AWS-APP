@@ -81,7 +81,7 @@ class Ping extends React.Component {
                 if (err) {
                     console.log(err);
                 }else {
-                    console.log(data);
+                    //console.log(data);
                     try{
                         this.sum += data.Item!.Ping;
                     } catch (e) {
